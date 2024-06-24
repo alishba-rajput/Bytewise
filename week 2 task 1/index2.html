@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        @media(min-width:780px){
+            .container{
+            display: flex;
+            /* align-items: flex-end;
+            align-items: flex-start; */
+            align-items: center;
+            /* flex-direction: column; */
+        }
+            .container-2{
+                display: flex;
+                justify-content: space-between;
+        }
+        }
+        
+        .container-2 >main{
+            width: 27%;
+        }
+     
+        .container >div,.container-2 >div{
+            border: 1px solid;
+            padding: 10px;
+        }
+        .box-1{
+            flex: 2;
+            order: 2;
+        }
+        .box-2{
+            flex: 1;
+            order: 1;
+
+        }
+        .box-3{
+            flex: 1;
+            order: 3;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-1">
+            <h1>Box 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.</p>
+        </div>
+        <div class="box-2">
+            <h1>Box 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.</p>
+
+        </div>
+        <div class="box-3">
+            <h1>Box 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="main">
+            <h1>Box 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.orem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.orem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium</p>
+        </div>
+        <div class="main">
+            <h1>Box 5</h1>
+            <p>Lorem ipsum dolor sit amet dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.orem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.orem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.</p>
+
+        </div>
+        <div class="main">
+            <h1>Box 6</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.orem ipsum dolor sit amet consectetur dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.orem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentiumadipisicing elit. Vitae quod, a ab minus quidem perferendis quisquam iusto blanditiis cum praesentium.</p>
+        </div>
+    </div>
+
+</body>
+</html>

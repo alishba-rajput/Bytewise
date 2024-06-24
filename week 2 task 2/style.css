@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-image: url(../images/coffee.png);
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.icon {
+    flex: 1;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+}
+
+.menu {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff7200;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.content .par {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    margin-top: 50px;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.cn:hover {
+    background-color: #fff;
+}
+
+.content span {
+    color: #ff7200;
+    font-size: 3rem;
+}
+
+.form {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form h2 {
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.form input {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ff7200;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.btnn {
+    width: 100%;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: #ff7200;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.form .link {
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #ff7200;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .menu ul li {
+        margin-left: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content span {
+        font-size: 2.5rem;
+    }
+
+    .form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .icon {
+        margin: 10px 0;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content span {
+        font-size: 2rem;
+    }
+
+    .form {
+        width: 100%;
+    }
+}

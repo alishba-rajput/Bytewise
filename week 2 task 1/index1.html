@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            /* grid-column-gap:1em; */
+            /* grid-row-gap: 1em; */
+            grid-gap: 1em;
+            /* grid-template-columns: 1fr,1fr,2fr; */
+            grid-template-columns:repeat(4,1fr,2fr)
+        }
+
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        nihil ratione hic dolor maxime modi quia porro eveniet nesciunt
+        veritatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        veritatis
+      </div>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, dicta! Autem, eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        nihil ratione hic dolor maxime modi quia porro eveniet nesciunt
+        veritatis</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, dicta! Autem, eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+            nihil ratione hic dolor maxime modi quia porro eveniet nesciunt
+            veritatis</div> 
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, dicta! Autem, eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+            nihil ratione hic dolor maxime modi quia porro eveniet nesciunt
+            veritatis</div> 
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, dicta! Autem, eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+            nihil ratione hic dolor maxime modi quia porro eveniet nesciunt
+            veritatis</div> 
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, dicta! Autem, eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+            nihil ratione hic dolor maxime modi quia porro eveniet nesciunt
+            veritatis</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, dicta! Autem, eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+            nihil ratione hic dolor maxime modi quia porro eveniet nesciunt
+            veritatis</div> 
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, dicta! Autem, eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+            nihil ratione hic dolor maxime modi quia porro eveniet nesciunt
+            veritatis</div>            
+    </div>
+  </body>
+</html>
