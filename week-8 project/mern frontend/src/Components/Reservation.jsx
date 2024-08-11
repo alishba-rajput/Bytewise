@@ -5,7 +5,7 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
-const BASE_URL = process.env.BASE_URL
+const BASE_URL = import.meta.env.BASE_URL;
 
 const Reservation = () => {
   const [firstName, setFirstName] = useState("");
